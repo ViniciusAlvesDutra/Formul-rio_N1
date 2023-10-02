@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title>Formulário</title>
+   <link rel="stylesheet" href="mystyle.css">
+</head>
+
+<body>
+  <h1>Formulário</h1><br>
+  <form autocomplete="on">
+    <fieldset class="f1">
+      <legend>Dados Pessoais</legend>
+      <!---->
+      <label for="nomec">Nome Completo:</label>
+      <input type="text" id="nomec" name="nomec"><br>
+      <!---->
+      <br>
+      <label for="data">Data de Nascimento:</label>
+      <input type="date"id="data" name="data"><br>
+      <!---->
+      <br>
+      <label for="text">Endereço:</label>
+      <input type="text"id="text" name="text"><br>
+      <!---->
+      <br>
+      <label for="bairro">Bairro:</label>
+      <input type="text" id="bairro" name="bairro">
+      <!---->
+      <label for="cidade">Cidade:</label>
+      <input type="text" id="cidade" name="cidade"><br>
+      <!---->
+      <label for="cep">CEP:</label>
+      <input type="number"id="cep" name="cep">
+      <!---->
+      <label for="es">Estado:</label>
+      <select id="es" name="es"> 
+      <option value="Ceara">Ceará</option>
+      <option value="Minas Gerais">MG</option>
+      </select>
+      <!-- Part. 2 -->
+      <br>
+      <form>
+      <fieldset class="f2">
+        <legend>Dados Profissionais</legend>
+        <!---->
+        <h3>Natureza dos Cargos:</h3>
+        <input type="radio" id="nc" name="nc" value="Gerencia">
+        <label for="nc">Gerência</label>
+        <input type="radio" id="nc" name="nc" value="Financeiro">
+        <label for="nc">Finaceiro</label>
+        <input type="radio" id="nc" name="nc" value="Recepcao">
+        <label for="nc">Recepção</label>
+        <input type="radio" id="nc" name="nc" value="administrativo">
+        <label for="nc">Administrativo</label>
+        <input type="radio" id="nc" name="nc" value="juridico">
+        <label for="nc">Jurídico</label>
+        <br>
+        <hr>
+        <h3>Área de interesse:</h3>
+                <input type="checkbox" id="ai" name="ai" value="Computação">
+        <label 
+for="nc">Computação</label>
+
+        <input type="checkbox" id="ai" name="ai" value="Quimica">
+        <label for="nc">Química</label>
+
+        <input type="checkbox" id="ai" name="ai" value="Meio-ambiente">
+        <label for="ai">Meio Ambiente</label>
+
+        <input type="checkbox" id="ai" name="ai" value="engenharia">
+        <label for="ai">Engenharia</label>
+        <input type="checkbox" id="ai" name="ai" value="matematica">
+        <label for="nc">Matemática</label><br>
+        <!---->
+        <hr>
+        <h3>Mini-currículo</h3>
+        <textarea name="area" cols="40px" rows="10">Escreva um pouco sobre você</textarea>
+      </fieldset>
+    </form>
+    </fieldset>
+  </form>
+  <!--Botão-->
+      <br>
+      <a href="./bc.html">
+        <button>Enviar</button>
+      </a>
+      <button class="b1"> Limpar </button>
+      
+  <script src="script.js"></script>
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>
